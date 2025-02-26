@@ -1,31 +1,29 @@
 class NavbarComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <nav class="navbar">
-                <div class="container navbar-container">
-                    <a href="./#home" class="navbar-logo">
-                        QGame
-                    </a>
+            <div class="container navbar-container">
+                <a href="./#home" class="navbar-logo">
+                    QGame
+                </a>
 
-                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>
-                    </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
 
-                    <ul class="navbar-menu" id="navbarMenu">
-                        <li class="navbar-item"><a href="./#home" class="navbar-link">Home</a></li>
-                        <li class="navbar-item"><a href="./#about" class="navbar-link">About US</a></li>
-                        <li class="navbar-item"><a href="./#games" class="navbar-link">Top Games</a></li>
-                        <li class="navbar-item"><a href="./#team" class="navbar-link">Our Team</a></li>
-                        <!-- <li class="navbar-item"><a href="#" class="navbar-link">For Parents</a></li>
-                        <li class="navbar-item"><a href="#" class="navbar-link">For Teachers</a></li> -->
-                    </ul>
-                </div>
-            </nav>
+                <ul class="navbar-menu" id="navbarMenu">
+                    <li class="navbar-item"><a href="./#home" class="navbar-link">Home</a></li>
+                    <li class="navbar-item"><a href="./#about" class="navbar-link">About US</a></li>
+                    <li class="navbar-item"><a href="./#games" class="navbar-link">Top Games</a></li>
+                    <li class="navbar-item"><a href="./#team" class="navbar-link">Our Team</a></li>
+                    <!-- <li class="navbar-item"><a href="#" class="navbar-link">For Parents</a></li>
+                    <li class="navbar-item"><a href="#" class="navbar-link">For Teachers</a></li> -->
+                </ul>
+            </div>
         `;
     }
 }

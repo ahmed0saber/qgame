@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #4361ee;
+    --secondary: #ff5c8d;
+    --accent: #7209b7;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --success: #06d6a0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 72px;
+}
+
+body {
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.col {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.navbar {
+    background-color: var(--dark);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 72px;
+    display: flex;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #fcfcfc;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-item {
+    margin-left: 1.5rem;
+}
+
+.navbar-link {
+    color: #fcfcfc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: var(--secondary);
+}
+
+.navbar-button {
+    background-color: var(--secondary);
+    color: #fcfcfc;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar-button:hover {
+    background-color: #ff3d7f;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fcfcfc;
+    cursor: pointer;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #fcfcfc;
+    padding: 2rem 0;
+    text-align: center;
+    min-height: calc(100svh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #fcfcfc;
+    color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #fcfcfc;
+    border: 2px solid #fcfcfc;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+.features {
+    padding: 5rem 0;
+    background-color: #fcfcfc;
+}
+
+.features-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.features-header h2 {
+    color: var(--primary);
+}
+
+.feature-card {
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary);
+    color: #fcfcfc;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.games {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.games-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.games-header h2 {
+    color: var(--primary);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.game-card {
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.game-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.game-content {
+    padding: 1.5rem;
+}
+
+.game-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.game-subject {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.game-description {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.game-link {
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.game-link:hover {
+    text-decoration: underline;
+}
+
+.games-cta {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.games-cta .btn {
+    background-color: var(--primary);
+    color: #fcfcfc;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+}
+
+.games-cta .btn:hover {
+    background-color: var(--primary);
+    opacity: 0.9;
+    transform: translateY(-3px);
+}
+
+.team {
+    padding: 5rem 0;
+    background-color: #fcfcfc;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.team-header h2 {
+    color: var(--primary);
+}
+
+.team-card {
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.team-content {
+    padding: 1.5rem;
+}
+
+.team-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-role {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.team-description {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.team-social {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--primary);
+    color: #fcfcfc;
+    transform: translateY(-2px);
+}
+
+.social-link.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.social-link.facebook:hover {
+    background-color: #1877f2;
+}
+
+.social-link.github:hover {
+    background-color: #333;
+}
+
+.social-link.portfolio:hover {
+    background-color: var(--secondary);
+}
+
+/* .newsletter {
+    padding: 5rem 0;
+    background-color: var(--primary);
+    color: #fcfcfc;
+    text-align: center;
+}
+
+.newsletter-header {
+    margin-bottom: 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.newsletter-button {
+    background-color: var(--secondary);
+    color: #fcfcfc;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+    background-color: #ff3d7f;
+} */
+
+.footer {
+    background-color: var(--dark);
+    color: #fcfcfc;
+    padding: 3rem 0;
+}
+
+.footer-logo {
+    color: #fcfcfc;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.footer-links h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fcfcfc;
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #495057;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #495057;
+    color: #fcfcfc;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: var(--secondary);
+}
+
+@media (max-width: 992px) {
+    .col {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--dark);
+        padding: 1rem;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-item {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-input {
+        border-radius: 4px;
+        margin-bottom: 1rem;
+    }
+
+    .newsletter-button {
+        border-radius: 4px;
+    }
+}
+
+game-component {
+    width: calc(100% - 2rem);
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 1px solid #adb5bd;
+    flex: 1;
+}

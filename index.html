@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/logo/favicon.ico">
+    <title>QGame - Educational Games Platform</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./components.js"></script>
+</head>
+
+<body>
+    <navbar-component></navbar-component>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Boost Your Brain with Fun Games!</h1>
+            <p>
+                Challenge yourself with our collection of word, math, and memory games designed to sharpen your mind
+                and improve your skills.
+            </p>
+            <div class="hero-buttons">
+                <a href="./#games" class="btn btn-primary">Get Started</a>
+                <a href="./#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="about">
+        <div class="container">
+            <div class="features-header">
+                <h2>Why Choose QGame?</h2>
+                <p>
+                    Our platform offers a variety of games that help you improve your vocabulary, math skills, and
+                    memory while having a great time.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                        </div>
+                        <h3>Curriculum Aligned</h3>
+                        <p>All games are aligned with national education standards to support classroom learning.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                <line x1="4" y1="22" x2="4" y2="15"></line>
+                            </svg>
+                        </div>
+                        <h3>Progress Tracking</h3>
+                        <p>Track learning progress with detailed reports for parents and teachers.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3>Adaptive Learning</h3>
+                        <p>Our games adapt to each student's skill level, providing the right challenge at the right
+                            time.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Safe for Kids</h3>
+                        <p>Ad-free environment with age-appropriate content and parental controls.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="games" id="games">
+        <div class="container">
+            <div class="games-header">
+                <h2>Popular Games</h2>
+                <p>Discover our most-loved games that make learning fun</p>
+            </div>
+
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="./images/games/math-game.webp" alt="Math Game" class="game-image">
+                    <div class="game-content">
+                        <span class="game-subject">Mathematics</span>
+                        <h3 class="game-title">Math Game</h3>
+                        <p class="game-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="./game.html?slug=math-game" class="game-link">Play Now →</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="./images/games/tech-scramble.webp" alt="Tech Scramble" class="game-image">
+                    <div class="game-content">
+                        <span class="game-subject">Vocabulary</span>
+                        <h3 class="game-title">Tech Scramble</h3>
+                        <p class="game-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="./game.html?slug=tech-scramble" class="game-link">Play Now →</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="./images/games/simon-game.webp" alt="Simon Game" class="game-image">
+                    <div class="game-content">
+                        <span class="game-subject">Memory</span>
+                        <h3 class="game-title">Simon Game</h3>
+                        <p class="game-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="./game.html?slug=simon-game" class="game-link">Play Now →</a>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="./images/games/math-game.webp" alt="Math Game" class="game-image">
+                    <div class="game-content">
+                        <span class="game-subject">Mathematics</span>
+                        <h3 class="game-title">Math Game</h3>
+                        <p class="game-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="./game.html?slug=math-game" class="game-link">Play Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="games-cta">
+                <a href="./games.html" class="btn btn-primary">View All Games</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <div class="team-header">
+                <h2>Our Team</h2>
+                <p>Meet the passionate educators and developers behind QGame</p>
+            </div>
+
+            <div class="games-grid">
+                <div class="team-card">
+                    <img src="./images/our-team/ahmed-saber.webp" alt="Ahmed Saber" class="team-image">
+                    <div class="team-content">
+                        <h3 class="team-name">Ahmed Saber</h3>
+                        <span class="team-role">Software Engineer</span>
+                        <p class="team-description">
+                            Software Engineer with a passion for Educational Technologies and Game Design.
+                        </p>
+                        <div class="team-social">
+                            <a href="https://www.linkedin.com/in/ahmed0saber/" aria-label="LinkedIn" target="_blank"
+                                class="social-link linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100092736532709" aria-label="Facebook"
+                                target="_blank" class="social-link facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/ahmed0saber" aria-label="GitHub" target="_blank"
+                                class="social-link github">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://ahmed0saber-posts.onrender.com" aria-label="Personal Website"
+                                target="_blank" class="social-link portfolio">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-header">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest games and educational resources</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+        </div>
+    </section> -->
+
+    <footer-component></footer-component>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

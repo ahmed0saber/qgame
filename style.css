@@ -531,7 +531,7 @@ navbar-component {
 }
 
 .social-icon:hover {
-    background-color: var(--secondary);
+    background-color: #0077b5;
 }
 
 @media (max-width: 992px) {

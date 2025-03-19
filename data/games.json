@@ -1,0 +1,62 @@
+[
+    {
+        "subject": "Mathematics",
+        "title": "Math Game",
+        "description": "Sharpen your math skills with this fun and challenging game! Solve equations, tackle puzzles, and improve your mental arithmetic while racing against the clock. Perfect for learners of all ages.",
+        "slug": "math-game"
+    },
+    {
+        "subject": "Vocabulary",
+        "title": "Tech Scramble",
+        "description": "Unscramble tech-related words and expand your vocabulary! From programming languages to web development tools, this game is perfect for tech enthusiasts and learners alike.",
+        "slug": "tech-scramble"
+    },
+    {
+        "subject": "Memory",
+        "title": "Simon Game",
+        "description": "Test your memory with the classic Simon Game! Follow the sequence of lights and sounds, and see how far you can go. A great way to improve your focus and recall skills.",
+        "slug": "simon-game"
+    },
+    {
+        "subject": "Puzzle",
+        "title": "2048 Puzzle",
+        "description": "Combine tiles to reach the elusive 2048 in this addictive puzzle game! Strategize your moves, plan ahead, and see if you can master this challenging yet rewarding game.",
+        "slug": "2048-puzzle"
+    },
+    {
+        "subject": "Puzzle",
+        "title": "Sudoku",
+        "description": "Challenge your logical thinking with Sudoku, the classic number-placement puzzle! Fill the grid so that each row, column, and 3x3 section contains all digits from 1 to 9.",
+        "slug": "sudoku"
+    },
+    {
+        "subject": "Memory",
+        "title": "Memory Match",
+        "description": "Test your memory and focus with Memory Match! Flip over cards to find matching pairs, but be quick—the clock is ticking. This fun and engaging game is perfect for improving your cognitive skills and memory retention.",
+        "slug": "memory-match"
+    },
+    {
+        "subject": "Puzzle",
+        "title": "Connect 4",
+        "description": "Challenge your strategy and planning skills with Connect 4! Drop red or yellow discs into the grid to form a line of four, but think fast—your opponent is one step ahead. This fun and competitive game is perfect for sharpening your tactical thinking and problem-solving abilities.",
+        "slug": "connect-4"
+    },
+    {
+        "subject": "Puzzle",
+        "title": "Tic Tac Toe",
+        "description": "Put your strategy to the test with Tic-Tac-Toe! Take turns placing X's and O's in a 3x3 grid to line up three in a row—horizontally, vertically, or diagonally. Quick and fun, this classic game sharpens your planning and critical thinking skills.",
+        "slug": "tic-tac-toe"
+    },
+    {
+        "subject": "Puzzle",
+        "title": "Candy Match",
+        "description": "Get ready for sweet fun with Candy Match! Swap and match colorful candies to clear the board and score points. Match three or more to create exciting combos and reach higher levels. This fun and addictive puzzle game is perfect for testing your strategy and quick thinking!",
+        "slug": "candy-match"
+    },
+    {
+        "subject": "Mathematics",
+        "title": "Guess The Number",
+        "description": "Test your luck and intuition with Guess The Number! Pick a number within a given range and see if you can guess the correct one. The game will give you hints—higher or lower—until you find the right answer. It's a fun and simple way to challenge your problem-solving skills!",
+        "slug": "guess-the-number"
+    }
+]

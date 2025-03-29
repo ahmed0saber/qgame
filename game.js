@@ -4,6 +4,7 @@ const initGame = () => {
     const slug = urlParams.get('slug')
     const gameComponentUrl = `https://qgame-studio.github.io/${slug}/script.js`
     const gameComponent = document.createElement('script')
+    gameComponent.id = 'game-script'
     gameComponent.src = gameComponentUrl
     document.documentElement.appendChild(gameComponent)
 }

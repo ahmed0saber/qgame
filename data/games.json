@@ -58,5 +58,11 @@
         "title": "Guess The Number",
         "description": "Test your luck and intuition with Guess The Number! Pick a number within a given range and see if you can guess the correct one. The game will give you hints—higher or lower—until you find the right answer. It's a fun and simple way to challenge your problem-solving skills!",
         "slug": "guess-the-number"
+    },
+    {
+        "subject": "Puzzle",
+        "title": "Card Battle",
+        "description": "A turn-based card game where you use a deck of unlimited cards, each with a unique number (0-10) and elemental attribute (fire, water, air, earth). Choose your cards wisely, unleash powerful combos, and defeat enemies in strategic battles. With each victory, you earn gold and experience, allowing you to level up and grow stronger.",
+        "slug": "card-battle"
     }
 ]

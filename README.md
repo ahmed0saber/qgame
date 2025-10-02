@@ -1,4 +1,4 @@
-### QGame — Microfrontend Educational Games Platform
+# QGame — Microfrontend Educational Games Platform
 
 QGame is a lightweight, static web platform that integrates a collection of educational games at runtime. Each game is built as an independent microfrontend delivered as a Web Component (with Shadow DOM), hosted separately, and dynamically loaded into the platform.
 
